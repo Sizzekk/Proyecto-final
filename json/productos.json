@@ -1,0 +1,33 @@
+[
+    {
+        "img" : "mouse.png",
+        "Nombre": "Mouse",
+        "Precio": 50000,
+        "id": 1
+    },
+   {
+        "img" : "teclado.png",
+        "Nombre": "Teclado",
+        "Precio": 25000,
+        "id": 2
+    },
+    
+    {
+        "img" : "auriculares.png",
+        "Nombre": "Auriculares",
+        "Precio": 37200,
+        "id": 3
+    },
+     {
+        "img" : "Monitor.png",
+        "Nombre": "Monitor",
+        "Precio": 120000,
+        "id": 4
+    },
+    {
+        "img" : "Placa.png",
+        "Nombre": "Placa de video",
+        "Precio": 300000,
+        "id": 5
+    }
+]

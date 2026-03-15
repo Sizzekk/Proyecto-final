@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../js/tarjeta.js"></script>
+    <title>Productoscarrito</title>
+    <link rel ="stylesheet" href="../css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+ <body>
+         <style>
+
+body{
+    background-color:#e5e5e5;
+    font-family: Arial;
+}
+
+.contenedor{
+    width:400px;
+    margin:auto;
+    margin-top:40px;
+    background:white;
+    border:1px solid #ccc;
+    padding:20px;
+}
+
+</style>
+    <form id="paymentForm"></form>
+  <h2>Pagar con tarjeta</h2>
+
+  <input value="Martin Domanico" type="text" id="cardName" placeholder="Nombre en la tarjeta" required><br><br>
+
+  <input value="4000056655665556" type="text" id="cardNumber" placeholder="Número de tarjeta" maxlength="16" required><br><br>
+
+  <input value="06/30" type="text" id="expiry" placeholder="MM/AA" required><br><br>
+
+  <input value="991" type="text" id="cvv" placeholder="CVV" maxlength="3" required><br><br>
+
+  <button type="submit" id="submitpago" >Pagar</button>
+</form>
+<div>
+<h2><a href="./checkout.html" style="text-decoration: none;" class="vuelta3">←</a></h2>
+</div>
+</body>

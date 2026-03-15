@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../js/checkout.js"></script>
+    <title>Checkout</title>
+    <link rel ="stylesheet" href="../css/main.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+  <style>
+
+body{
+    background-color:#e5e5e5;
+    font-family: Arial;
+}
+
+.contenedor{
+    width:400px;
+    margin:auto;
+    margin-top:40px;
+    background:white;
+    border:1px solid #ccc;
+    padding:20px;
+}
+
+input, select{
+    width:100%;
+    margin-bottom:10px;
+}
+
+button{
+    width:100%;
+    padding:8px;
+}
+
+</style>
+
+
+<form>
+  <div class="form-row">
+    <label for="Nombre1">Nombre</label>
+    <div class="col">
+      <input value = "Martin" type="text" class="form-group col-md-6" placeholder="Nombre">
+    </div>
+    <label for="Apellido1">Apellido</label>
+    <div class="col">
+      <input value="Domanico" type="text" class="form-group col-md-6" placeholder="Apellido">
+    </div>
+  </div>
+  <label for="correoelectronico">Email</label>
+   <div class="form-row">
+      <input value="martincho12.dom@gmail.com" type="email" class="form-group col-md-6" id="Mail" placeholder="Email">
+    </div>
+    <label for="domicilio">Dirección</label>
+  <div class="form-group">
+    <input value="Belgrano 1200" type="text" class="form-group col-md-6" id="domicilio1" placeholder="Falsa 123">
+  </div>
+   <label for="Ref">Referencia Domicilio</label>
+  <div class="form-group">
+    <input value="Porton de chapa blanco" type="text" class="form-group col-md-6" id="Referencias" placeholder="Porton, casa, auto">
+  </div>
+    <label for="localidad1">localidad</label>
+  <div class="form-row">
+    <div class="col">
+      <input value="Flores" type="text" class="form-group col-md-6" id="Ciudad">
+    </div>
+    <label for="Provincia1">Provincia</label>
+    <div class="col">
+      <select id="Provincia1" class="form-group col-md-6">
+        <option selected>Buenos Aires</option>
+        <option>Capital Federal</option>
+        <option>Cordoba</option>
+        <option>La Rioja</option>
+        <option>Mendoza</option>
+        <option>Neuquen</option>
+        <option>Jujuy</option>
+        <option>Salta</option>
+        <option>Tierra del Fuego</option>
+      </select>
+    </div>
+    <label for="cp">Codigo Postal</label>
+    <div class="col">
+      <input value="2100" type="text" class="form-group col-md-6" id="CP">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input checked class="form-check-input" type="checkbox" id="Tic">
+      <label class="form-check-label" for="Tic">
+        Acepto la compra
+      </label>
+    </div>
+    <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="Soloyo" id="Yo" value="option1">
+  <label class="form-check-label" for="soloyo">Lo recibo Yo</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="Soloyo" id="Otra">
+  <label class="form-check-label" for="otrapersona">Lo recibe otra persona</label>
+</div>
+  <button type="submit" class="btn btn-primary" id="submitcheckout"> Siguiente Paso</button>
+</form>
+<div class="notify" id="notify1">
+</div>
+<h2><a href="./carrito.html" style="text-decoration: none;" class="vuelta2">←</a></h2>
+</body>
